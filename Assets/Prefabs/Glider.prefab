@@ -77,15 +77,20 @@ MonoBehaviour:
   rigidbody: {fileID: 5397045063744040940}
   groundCamera: {fileID: 0}
   gliderCamera: {fileID: 1367750739500330157}
-  startingVelocity: {x: 0, y: 0, z: 10}
+  startingSpeed: 80
   rollScaler: 1
-  elevatorMin: -1
-  elevatorMax: 2
+  elevatorMin: -0.5
+  elevatorMax: 1.25
   airDensity: 0.1
   wingArea: 1
-  lift: {x: 0, y: 0, z: 0}
   speed: 0
+  minSpeedReached: 99999
   maxSpeedReached: 0
+  height: 0
+  minHeightThisCycle: 0
+  maxHeightThisCycle: 0
+  loopRadius: 0
+  forceMode: 0
 --- !u!1 &2506623255293384186
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,9 +101,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3679512318634270751}
   - component: {fileID: 1367750739500330157}
-  - component: {fileID: 4041719629117559763}
   m_Layer: 0
-  m_Name: Camera
+  m_Name: Glider Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,14 +174,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &4041719629117559763
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2506623255293384186}
-  m_Enabled: 1
 --- !u!1001 &1850342182873046208
 PrefabInstance:
   m_ObjectHideFlags: 0
