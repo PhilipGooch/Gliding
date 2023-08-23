@@ -8,8 +8,6 @@ public class Glider : MonoBehaviour
 
     [SerializeField]
     private Camera groundCamera;
-    [SerializeField]
-    private Camera gliderCamera;
 
     [SerializeField]
     private float rollScaler = 1;

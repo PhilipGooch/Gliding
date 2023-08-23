@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Altometer : MonoBehaviour
+public class AltitudeMeter : MonoBehaviour
 {
     [SerializeField]
     Glider glider;
